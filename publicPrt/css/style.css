@@ -1,0 +1,287 @@
+
+:root
+{
+    
+    --primaryColor:#031F30; /*-- color de fondo--*/
+    --secondColor: #48B9A5; /*-- color efecto de fondo y contornos--*/
+    --thirdColor:#0E161B; /*-- color de resaltado de componentes--*/
+    --primaryText: #CCD6F6; /*-- color de titulos--*/
+    --secondText:#8892B0; /*-- color de subtitulos--*/
+    --danger:#A1272E;
+    
+}
+
+body
+{
+    background-color: var(--primaryColor);
+    margin: 0 auto;
+}
+.main-container{
+    padding: 5px 15px 5px 15px;
+}
+
+
+nav
+{
+    height: 5vh;
+    display: grid;
+    justify-items: right;
+}
+nav a 
+{
+    text-decoration: none;
+    color: var(--secondText);
+    font-size: 1.5rem;
+}
+nav svg
+{
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    fill: var(--primaryText) !important;
+}
+
+footer
+{
+    margin-top: 30px;
+    border-top: 1px solid var(--secondText);
+}
+
+
+.intro-container
+{
+    width: 100%;
+    height: 95vh;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.intro-container img
+{
+    margin: 50px;
+    width: 30%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-container span
+{
+    margin: 0;
+    color: var(--primaryText);
+    font-size: 5rem;
+    font-family: 'MonteCarlo', cursive;
+}
+.intro-container p
+{
+    color: var(--secondText);
+    font-size: 1rem;
+}
+.intro-container li
+{
+    display: inline;
+}
+.intro-container svg
+{
+    width: 25px;
+    height: 25px;
+    margin-inline: 20px;
+    stroke: var(--primaryText);
+}
+
+
+.menu-container
+{
+    width: 100%;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.menu-container p
+{
+    margin: 0;
+    color: var(--primaryText);
+    font-size: 3rem;
+    font-family: 'MonteCarlo', cursive;
+}
+.menu-option
+{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 2%;
+}
+.menu-option div
+{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    background-color: var(--primaryColor);
+    border: 1px solid var(--primaryText);
+    transition: 0.3s;
+}
+
+.menu-option div:hover
+{
+    transform: scale(0.8);
+    border: 1px solid var(--secondColor);
+}
+.menu-option svg
+{
+    fill: var(--secondText) !important;
+    width: 50px;
+    height: 50px;
+}
+.menu-option a
+{
+    text-decoration: none;
+}
+
+
+.link-contacto
+{
+    font-size: 1.5rem;
+}
+
+
+.card-form
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.card-form h2
+{
+    font-size: 2rem;
+    color: var(--primaryText);
+    text-align: center;
+}
+.card-form div
+{
+    display: flex;
+    flex-direction: column;
+}
+.card-form label
+{
+    color: var(--secondText);
+    font-size: 1rem;
+}
+.card-form h3
+{
+    color: var(--danger);
+    font-size: 1rem;
+}
+.card-form input
+{
+    font-size: 1.5rem;
+    color: var(--primaryText);
+    border-color: var(--secondColor);
+    background-color: var(--primaryColor);
+}
+.card-form textarea
+{
+    font-size: 1rem;
+    color: var(--primaryText);
+    border-color: var(--secondColor);
+    background-color: var(--primaryColor);
+}
+.card-form button
+{
+    margin-top: 10px;
+    width: 100%;
+    background-color: var(--secondText);
+    padding: 15px 20px;
+    color: var(--primaryColor);
+}
+
+.data-footer
+{
+    display: grid;
+    place-items: center;
+    color: var(--secondText);
+    text-align: center;
+    margin: 0;
+}
+.data-footer li
+{
+    display: inline;
+}
+.data-footer svg
+{
+    width: 20px;
+    height: 20px;
+    margin-inline: 5px;
+    stroke: var(--secondText);
+}
+.data-footer a
+{
+    text-decoration: none;
+    color: var(--secondText);
+}
+.data-footer p
+{
+    font-size: 1rem;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+
+.proyect-container
+{
+    width: 100%;
+    padding: 0px 20px 0px 20px;
+    color: var(--primaryText);
+}
+
+.content-proyects
+{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    gap: 5%;
+    margin-bottom: 30px;
+}
+.proyect-container span
+{
+    color: var(--primaryText);
+    font-size: 2rem;
+    font-family: 'MonteCarlo', cursive;
+}
+.content-proyect
+{
+    border: 1px solid var(--secondText);
+    display: grid;
+    place-items: center;
+    background-color: var(--primaryColor);
+    transition: 2s;
+}
+.content-proyect svg
+{
+    width: 20px;
+    height: 20px;
+    stroke: var(--secondText);
+}
+.content-proyect img
+{
+    margin: 10px;
+    width: 50%;
+    height: 100px;
+}
+.content-proyect p
+{
+    text-align: center;
+}
+.content-proyect span
+{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+}
+.content-proyect:hover
+{
+    transform: scale(0.9);
+    border: 1px solid var(--secondColor);
+}
+
