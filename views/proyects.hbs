@@ -11,14 +11,14 @@
 <body>
     <div class="main-container animated fadeInLeftBig">
         <nav> 
-            <a href="/"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg></a>
+            <a href="/menu"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg></a>
         </nav>
         <main>
             <section id="proyect" class="proyect-container">
                 <div class="proyect-section">
                     <span>Mis Proyectos</span>
                     <div class="content-proyects">
-                        <div class="content-proyect">
+                        <div class="content-proyect" >
                         <img src="./image/sistema_admin_odonto.jpg" alt="">
                         <span>Administracion de Odontologia</span>
                         <p>El objetivo principal de este sistema 
@@ -41,7 +41,7 @@
                             directamente con el proyecto y tener una experiencia 
                             mas cerca a este proceso humano.</p>
                         </div>
-                    <div class="content-proyect">
+                    <div class="content-proyect" id="btn-vigilancia">
                         <img src="./image/sistema_vigilancia.png.jpg" alt="">
                         <span>Vigilancia de agua</span>
                         <p>Este proyecto se realizo para la municipalidad 
@@ -50,7 +50,9 @@
                             las pruebas que se reaizan al agua potable que 
                             distribuye la municipalidad a todo el municipio y 
                             aldeas cercanas donde se debian tomar muestras cada 
-                            ciclo y verificar los niveles de cloro del agua. </p>
+                            ciclo y verificar los niveles de cloro del agua. 
+                            </p>
+                            <a href="vigilancia.hbs"></a>
                         </div>
                     <div class="content-proyect">
                         <img src="./image/agencia_viajes.JPG" alt="">
@@ -72,7 +74,7 @@
                         </p>
                         </div>
                     <div class="content-proyect">
-                        <img src="./image/aplicacion-Yargs.JPG" alt="">
+                        <img src="./image/proye-Yargs.JPG" alt="">
                         <span>Proyecto YARGS</span>
                         <p>Este proyecto, se modifico la aplicacion para aceptar otro parametro de busqueda, 
                             ademas de agregarle colores, y contar con respaldo de la aplicacion en el repositorio,
@@ -87,23 +89,57 @@
                             descripcion y citando los versiculos de la biblia. 
                         </p>
                         </div>
-                    <div class="content-proyect">
+                    <div class="content-proyect" id="btn-bitacora">
                         <img src="./image/bitacora-base-de-datos.JPG" alt="">
+                        <span>Auditoria DB</span>
                         <p>La bitacora de base de datos, fue un proyecto que se realizo para poder llevar la auditoria
                             sobre una base de datos, la cual consistia en crear un sistema de escritorio como interfaz grafica
                             al usuario y la logica que lleva detras, que seria la base de datos como tal, la cual gestione cada
                             proceso. 
                         </p>
+                        <a href="/bitacoradb"></a>
                     </div>
+                </div>
+            </div>
+            <div class="proyect-section">
+                <div class="content-proyects">
+                    <div class="content-proyect" id="btn-robot">
+                        <img src="./image/robot-auto.JPG" alt="">
+                        <span>Robot Test</span>
+                        <p>El proyecto consistia en crear un robot de pruebas automatizadas, 
+                            aplicadas a un sitio web, debia cumplir con los procedimientos que un 
+                            usuario realizaria al momento de ingresar a la pagina web. 
+                        </p>
+                        <a href="/robottest"></a>
+                        </div>
+                    <div class="content-proyect" id="btn-mongo">
+                        <img src="./image/mongoDB.JPG" alt="">
+                        <span>Conexion mongoDB</span>
+                        <p>Este proyecto, corresponde a la culminacion del los ejercicios RestServer,
+                            con el fin de entender el funcionamiento de rutas, y las peticiones que se 
+                            pueden realizar a un servidor conectado. 
+                        </p>
+                        <a href="/mongodb"></a>
+                        </div>
                 </div>
             </div>
            
         </section>
         </main>
-        
+    </div>
+     <script>
+            const d = document;
+            d.getElementById('btn-vigilancia').addEventListener('click',()=> location.href = "/vigilancia");
+            
+            d.getElementById('btn-bitacora').addEventListener('click',()=> location.href = "/bitacoradb");
+            
+            d.getElementById('btn-robot').addEventListener('click',()=> location.href = "/robottest");
+            
+            d.getElementById('btn-mongo').addEventListener('click',()=> location.href = "/mongodb");
+            
+    </script>
 
 		<!-- Footer -->
 			{{> footer}}
-    </div>
 </body>
 </html>

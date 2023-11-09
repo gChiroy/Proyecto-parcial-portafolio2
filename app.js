@@ -21,9 +21,18 @@ app.get('/', (req, res) => {
     res.render('home')
 })
 
+app.get('/menu', (req, res) => {
+    res.render('menu')
+})
+
 
 app.get('/proyects', (req, res) => {
     res.render('proyects')
+})
+
+
+app.get('/skills', (req, res) => {
+    res.render('skills')
 })
 
 
@@ -31,6 +40,21 @@ app.get('/contacto', (req, res) => {
     res.render('contacto')
 })
 
+app.get('/vigilancia', (req, res) => {
+    res.render('vigilancia')
+})
+
+app.get('/robottest', (req, res) => {
+    res.render('robottest')
+})
+
+app.get('/bitacoradb', (req, res) => {
+    res.render('bitacoradb')
+})
+
+app.get('/mongodb', (req, res) => {
+    res.render('mongodb')
+})
 
 
 app.listen(port, () => {
